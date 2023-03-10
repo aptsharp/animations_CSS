@@ -14,10 +14,32 @@ body{
     background: linear-gradient(90deg, #fc466b 0%, #3f5efb 100%  );
     width: 200px;
     height: 200px;
-    border-radius: 50%;
+    border-radius: 8%;
 }
 
 .box:hover{
-    transform: translate(250px, 250px);
+    /* so funciona para mover o elemento na tela */
+    transform: translate(250px, 250px) rotate(-360deg) skew(-20deg); /* juntando os 2 elementos*/
     transition: transform 1s ease-in-out;
+
+    /* so funciona para rodar o elemento na tela */
+    /* transform: rotate(360deg); */
 }
+
+/* transform: matrix()
+
+matrix: matrix(
+    scaleX(),
+    skewY(),
+    skewX(),
+    scaleY(),
+    translateX(),
+    translateY()
+)
+
+usa todas essa propriedades da na sequencia que esta listada. 
+
+pode ser usado pelo site com https://angrytools.com/
+essencial para gerencias animações com CSS. 
+
+*/
