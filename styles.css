@@ -1,29 +1,29 @@
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    /* background-color: rgb(247, 247, 247); */
-    background-color: black;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  /* background-color: rgb(247, 247, 247); */
+  background-color: black;
 
-    margin: 0;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.box{
-    background: linear-gradient(90deg, #fc466b 0%, #3f5efb 100%  );
-    width: 200px;
-    height: 200px;
-    border-radius: 8%;
+.box {
+  background: linear-gradient(90deg, #fc466b 0%, #3f5efb 100%);
+  width: 200px;
+  height: 200px;
+  border-radius: 8%;
 }
 
-.box:hover{
-    /* so funciona para mover o elemento na tela */
-    transform: translate(250px, 250px) rotate(-360deg) skew(-20deg); /* juntando os 2 elementos*/
-    transition: transform 1s ease-in-out;
+.box:hover {
+  /* so funciona para mover o elemento na tela */
+  transform: translate(250px, 250px) rotate(-360deg) skew(-20deg); /* juntando os 2 elementos*/
+  transition: transform 1s ease-in-out;
 
-    /* so funciona para rodar o elemento na tela */
-    /* transform: rotate(360deg); */
+  /* so funciona para rodar o elemento na tela */
+  /* transform: rotate(360deg); */
 }
 
 /* transform: matrix()
@@ -44,15 +44,48 @@ essencial para gerencias animações com CSS.
 
 */
 
-.boxl{
-    background: linear-gradient(90deg, #fc466b 0%, #3f5efb 100%  );
+.boxl {
+  background: linear-gradient(90deg, #fc466b 0%, #3f5efb 100%);
+  width: 200px;
+  height: 200px;
+  border-radius: 8%;
+}
+
+.boxl:hover {
+  /* so funciona para mover o elemento na tela */
+  transform: rotateY(20deg) rotateY(40deg) rotateZ(20deg); /* perspectiva de profundidade */
+  transition: transform 1s ease-in-out;
+}
+
+/* Transformação com perspectiva de ponto focal */
+.boxll {
+  background: linear-gradient(90deg, #fc466b 0%, #3f5efb 100%);
+  width: 200px;
+  height: 200px;
+  border-radius: 8%;
+
+  transform-origin: left top;
+  /* ponto focal para girar */
+}
+
+.boxll:hover {
+  transform: rotate(360deg);
+  /* grau da rotação */
+  transition: transform 3s ease-in-out;
+}
+
+
+/* animações */
+.boxlll {
+    background: indigo;
     width: 200px;
     height: 200px;
     border-radius: 8%;
-}
-
-.boxl:hover{
-    /* so funciona para mover o elemento na tela */
-    transform: rotateY(20deg) rotateY(40deg) rotateZ(20deg); /* perspectiva de profundidade */
-    transition: transform 1s ease-in-out;
-}
+  
+    transition: 3s;
+  }
+  
+  .boxlll:hover {
+    background: linear-gradient(90deg, #fc466b 0%, #3f5efb 100%);
+    transform: rotate(360deg);
+  }
