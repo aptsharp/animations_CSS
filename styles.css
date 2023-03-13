@@ -53,9 +53,6 @@ essencial para gerencias animações com CSS.
 
 .boxl:hover{
     /* so funciona para mover o elemento na tela */
-    transform: translate(250px, 250px) rotate(-360deg) skew(-20deg); /* juntando os 2 elementos*/
+    transform: rotateY(20deg) rotateY(40deg) rotateZ(20deg); /* perspectiva de profundidade */
     transition: transform 1s ease-in-out;
-
-    /* so funciona para rodar o elemento na tela */
-    /* transform: rotate(360deg); */
 }
