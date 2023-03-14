@@ -74,18 +74,17 @@ essencial para gerencias animações com CSS.
   transition: transform 3s ease-in-out;
 }
 
-
 /* animações */
 .boxlll {
-    background: indigo;
-    width: 200px;
-    height: 200px;
-    border-radius: 8%;
-  
-    transition: 3s;
-  }
-  
-  .boxlll:hover {
-    background: linear-gradient(90deg, #fc466b 0%, #3f5efb 100%);
-    transform: rotate(360deg);
-  }
+  background: indigo;
+  width: 200px;
+  height: 200px;
+  border-radius: 8%;
+
+  transition: 3s;
+}
+
+.boxlll:hover {
+  background: linear-gradient(90deg, #fc466b 0%, #3f5efb 100%);
+  transform: rotate(360deg);
+}
